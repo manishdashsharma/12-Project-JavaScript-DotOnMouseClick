@@ -14,11 +14,11 @@ box.addEventListener("click",(event)=>{
     const circle = document.createElement("div");
     circle.classList.add("circle");
     setTimeout(()=>{
-    circle.style.transform = "scale(1)";
+        circle.style.transform = "scale(1)";
     },100)
     setTimeout(()=>{
         circle.style.transform = "scale(0)"
-        },5000)
+    },5000)
     circle.style.background = randomColor();
     circle.style.left = `${event.clientX-box.getBoundingClientRect().left}px`;
     circle.style.top = `${event.clientY-box.getBoundingClientRect().top}px`;
